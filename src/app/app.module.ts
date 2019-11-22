@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CommentComponent } from './comment/comment.component';
+import { SubCommentComponent } from './sub-comment/sub-comment.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CommentComponent,
+    SubCommentComponent
   ],
   imports: [
     BrowserModule,
@@ -15,4 +19,7 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  L :number;
+
+ }
