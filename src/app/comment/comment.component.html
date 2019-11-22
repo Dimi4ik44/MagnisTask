@@ -2,7 +2,7 @@
     <li *ngFor="let com of Comments">
         <div #comid id={{com.CommentId}}>
             <strong>{{com.Data}}</strong>
-            <input #in type="text" (keyup.enter)="AddSubComment(in,comid)" placeholder="Залишити коментар" >
+            <input #in type="text" (keyup.enter)="AddSubComment(in,comid)" placeholder="Відповісти" >
             <div style="display: inline-table;">
                 <button (click)="AddSubComment(in,comid) ">✓</button>
                 <button class="delete" (click)="Remove(comid.id)">✘</button>
